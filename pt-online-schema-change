@@ -9084,7 +9084,7 @@ sub main {
    };
 
 
-   if ( 0 && $slaves && scalar @$slaves ) {
+   if ( /*0 BYPASS THE REPLICA CHECKS HERE && */ $slaves && scalar @$slaves ) {
       foreach my $slave (@$slaves) {
          my ($pr, $pr_first_report);
          if ( $o->get('progress') ) {
